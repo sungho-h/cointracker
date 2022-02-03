@@ -15,6 +15,8 @@ run docker container `docker run -p 5000:5000 -d docker-flask-test`
 to stop the container run `docker kill $(docker ps -q)`
 
 
-## part2 fuzzy transfer detection is in `/Flask-Web-App/website/detect_transfers.py`
+## part2 fuzzy transfer detection 
+
+located in `/Flask-Web-App/website/detect_transfers.py`
 
 demo without audio: https://youtu.be/gYryF4dHYaw
