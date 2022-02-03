@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1 align="center">wallets
+  <button type="button" class="btn btn-primary" onClick="refreshWallet()"> refresh </button>
+</h1>
+<ol class="list-group list-group-flush" id="wallets">
+  {% for wallet in user.wallets %}
+  <li class="list-group-item">
+    <h4>
+      Address: {{ wallet.address }}
+    </h4>
+    <h4>
+      Balance: {{ wallet.balance }} satoshi
+    </h4>
+    <br/>
+    <h4>
+      Transactions:
+    </h4>
+    <ol>
+      {% for transaction in wallet.transactions %}
+        <li>{{ transaction.hash }}</li>
+      {% endfor %}
+    </ol>
+
+  </li>
+  {% endfor %}
+</ol>
+<form method="POST">
+  <textarea name="address" id="address" class="form-control"></textarea>
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Add Address</button>
+  </div>
+</form>
+{% endblock %}
