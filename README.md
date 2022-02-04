@@ -3,7 +3,8 @@ project for cointracker
 
 
 simple flask web app wrapped with a docker container for simple demo
-https://sung-ho.notion.site/Cointracker-answers-40edf58b423547238c03e54862743f6e
+
+[Notion link](https://sung-ho.notion.site/Cointracker-answers-40edf58b423547238c03e54862743f6e)
 
 
 ## how to run
